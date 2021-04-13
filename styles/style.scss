@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap');
+
+$gradient: linear-gradient(90deg, #A1C4FD 40%, #C2E9FB 100%);
+$blob-color: #53D7BF;
+$black: #4B4B4B;
+$font: 'Lusitana', sans-serif;;
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font;
+   overflow-x: hidden;
+}
