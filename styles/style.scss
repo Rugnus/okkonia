@@ -187,12 +187,14 @@ a {
         position: absolute;
         z-index: -1;
     }
+    &__image img {
+       width: 100%;
+    }
 
     &__title {
-        padding: 10rem 8rem;
+        padding: 20rem 8rem 10rem 8rem;
         font-size: 4.6rem;
         color: $black;
-
 
         span {
             position: relative;
@@ -219,7 +221,7 @@ a {
       grid-gap: 10px;
 
       .room__item {
-         display: flex;
+         display: flex ;
          flex-direction: column;
          justify-content: space-around;
          height: 720px;
@@ -273,6 +275,14 @@ a {
    }
 }
 
+
+.item-hide {
+   display: none !important;
+}
+
+.item-show {
+   display: block !important;
+}
 
 
 .white {
