@@ -28,6 +28,7 @@ html {
 a {
    color: $black;
    font-weight: bold;
+   text-decoration: none;
 }
 
 .header {
@@ -186,7 +187,7 @@ a {
     }
 
     &__title {
-        padding: 12rem 8rem;
+        padding: 10rem 8rem;
         font-size: 4.6rem;
         color: $black;
 
@@ -204,5 +205,68 @@ a {
             background: $text-back;
             z-index: -1;
         }
-    }
+   }
+
+   &__items {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
+      grid-gap: 10px;
+
+      .room__item {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         height: 720px;
+
+         &-image {
+            border-radius: 10px;
+         }
+
+         &-title {
+            font-size: 3.6rem;
+            font-weight: bold;
+            width: 150px;
+         }
+
+         &-desc {
+            font-size: 1.8rem;
+            width: 306px;
+         }
+
+         &-button {
+            border-radius: 20px;
+            width: 140px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            cursor: pointer;
+            transition: all .3s ease;
+         }
+
+         &-button:hover {
+            width: 150px;
+            height: 55px;
+         }
+
+         &-button a{
+            color: #fff;
+            font-size: 1.6rem;
+         }
+      }
+   }
+
+   &__buttons {
+      padding: 5rem 15rem;
+      font-size: 4.8rem;
+      i {
+         margin: .5rem;
+         cursor: pointer;
+      }
+   }
 }
