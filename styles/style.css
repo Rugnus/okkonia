@@ -25,6 +25,8 @@ a {
 
 .header {
   position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   z-index: 3;
   font-size: 2rem;
@@ -290,5 +292,9 @@ a {
 .room__buttons i {
   margin: .5rem;
   cursor: pointer;
+}
+
+.white {
+  background-color: white !important;
 }
 /*# sourceMappingURL=style.css.map */
